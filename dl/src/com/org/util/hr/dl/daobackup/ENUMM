@@ -1,0 +1,52 @@
+import java.util.Scanner;
+enum GENDER{Male,Female}
+class Person
+{
+private String name;
+private char gender;
+public void setName(String name)
+{
+this.name=name;
+}
+
+public void setGender(GENDER gender)
+{
+if(gender==GENDER.Male)this.gender='M';
+else this.gender='F';
+}
+
+public String getName()
+{
+return this.name;
+}
+
+public char getGender()
+{
+return this.gender;
+}
+}
+
+
+class Main
+{
+public static void main(String gg[])
+{
+Scanner scan=new Scanner(System.in);
+Person person=new Person();
+String name;
+char gender;
+System.out.print("Enter the name of person : ");
+name=scan.nextLine();
+System.out.print("Enter the gender : ");
+gender=scan.nextLine().charAt(0);
+if(gender!='M'&&gender!='m'&&gender!='F'&&gender!='f')
+{
+System.out.println("Invalid gender : "+gender);
+return;
+}
+if(gender=='M'||gender=='m')person.setGender(GENDER.Male);
+else person.setGender(GENDER.Female);
+person.setName(name);
+System.out.println("Name : "+person.getName()+","+"Gender : "+person.getGender());
+}
+}

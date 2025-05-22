@@ -1,0 +1,1 @@
+javac -d ..\classes -classpath c:\javaprojects\networking\netclient\dist\netclient.jar;c:\javaprojects\networking\netcommon\dist\netcommon.jar;c:\javaprojects\hr\proxybl\dist\hr-proxybl.jar;. main\java\com\org\util\hr\bl\dao\DesignationManager.java

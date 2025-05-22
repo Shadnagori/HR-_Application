@@ -1,0 +1,27 @@
+import java.util.*;
+import java.text.*;
+
+class psp
+{
+public static void main(String gg[])
+{
+Date d=new Date();
+SimpleDateFormat  sdf=new SimpleDateFormat("dd/MM/yyyy");
+try
+{
+d=sdf.parse(gg[0]);
+System.out.println("Date : "+d.getDate());
+System.out.println("Month : "+(d.getMonth()+1));
+System.out.println("Year : "+(d.getYear()+1900));
+System.out.println("Day of week : "+d.getDay());
+System.out.println("Unparsing the date");
+
+String dateString=sdf.format(d);
+System.out.println("Date : "+dateString);
+
+}catch(ParseException pe)
+{
+System.out.println(pe.getMessage());
+}
+}
+}

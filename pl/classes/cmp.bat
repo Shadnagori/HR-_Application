@@ -1,0 +1,1 @@
+jar -cvf ..\dist\hr-pl.jar com

@@ -1,0 +1,1 @@
+java -classpath ..\dist\hr-pl.jar;c:\icons\dist\images.jar;..\..\proxybl\dist\hr-proxybl.jar;..\..\..\networking\netcommon\dist\netcommon.jar;..\..\..\networking\netclient\dist\netclient.jar;c:\itext7\*;..\..\..\common\dist\tmcommon.jar;. com.org.util.hr.pl.Main

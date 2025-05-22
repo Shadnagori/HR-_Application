@@ -1,0 +1,13 @@
+import java.util.*;
+import java.math.*;
+class psp
+{
+public static void main(String gg[])
+{
+BigDecimal b=new BigDecimal("2147483649.34");
+String salary=b.toPlainString();
+System.out.println(salary);
+System.out.println(b.signum());
+
+}
+}
